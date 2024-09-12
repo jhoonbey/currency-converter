@@ -31,3 +31,9 @@ _If you want to run the application locally without a docker-compose file, make 
 
 After running the application, go to use:
 http://localhost:5000/swagger/index.html
+
+## Improvements:
+
+- I used Redis to cache data, it will reduce requests to external API
+- I applied the retry mechanism to reconnect to API if it fails.
+- Using Polly, we can add a Rate Limit for every Service method (not done)
